@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css">
     <title>Student Companion App</title>
   </head>
   <body>
@@ -38,10 +39,12 @@
         <span>You</span>
       </section>
       <h2>Rate your current energy level</h2>
-      <button type="button button__100">100%</button>
-      <button type="button button__75">75%</button>
-      <button type="button button__50">50%</button>
-      <button type="button button__25">25%</button>
+      <div class="energyrate_wrapper">
+        <button class="energyrate energyrate__100" type="button">100%</button>
+        <button class="energyrate energyrate__75" type="button">75%</button>
+        <button class="energyrate energyrate__50" type="button">50%</button>
+        <button class="energyrate energyrate__25" type="button">25%</button>
+    </div>
     </main>
     <footer>
       <nav class="navbar">
