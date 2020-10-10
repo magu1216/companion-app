@@ -1,19 +1,91 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
+    <link href="./css/gadget.css" type="text/css" rel="stylesheet">
     <title>Student Companion App</title>
   </head>
+  
+  
   <body>
+    <!-- Head dashboard -->
     <header>
-      <h1></h1>
+      <h1>DASHBOARD</h1>
     </header>
-    <main></main>
+
+    <main>
+      <h2>Your Code Buddy for Today:</h2>
+      <div class="container__names--buddy-flex">
+        <!-- this is the plus thing in total -->
+        <div class="container__names container__first-child">Sudanka Bakalowits</div>
+        <img class="container__names--plus" src="Icons/Plus.png" alt="Plus">
+        <div class="container__names container__last-child">Yasaman Forotan</div>        
+      </div>
+    
+      <h2>Your Current Team:</h2>
+      <div class="container__names--team-flex">
+        <div class="container__names container__first-child">Sudanka Bakalowits</div>
+        <div class="container__names">Yasaman Forotan</div>
+        <div class="container__names">Chioke Okonkwo</div>
+        <div class="container__names">Maria Jose Botin</div>
+        <div class="container__names container__last-child">Tikhon Yaraslavsky</div>
+      </div>
+
+      <!-- Head Yesterdays Journal -->
+      <h2 class="h2__journal--margin">Yesterdays Journal:</h2>
+        
+      <div class="container__journal">
+          
+        <h3 class="h3__journal--rating">rating</h3>
+        <div class="container__voting">
+          <img class="container__voting--true" src="./companion-app/Icons/Star.png" alt="*" />
+          <img class="container__voting--true" src="./companion-app/Icons/Star.png" alt="*" />
+          <img class="container__voting--true" src="./companion-app/Icons/Star.png" alt="*" />
+          <img class="container__voting--false" src="./companion-app/Icons/Star.png" alt="*" />
+          <img class="container__voting--false" src="./companion-app/Icons/Star.png" alt="*" />
+        </div>
+
+        <h3 class="h3__journal--comprehension">comprehension</h3>
+        <div class="container__journal--meter">
+          <img class="container__journal--meter-true" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-true" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-true" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-true" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-true" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-true" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-true" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-false" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-false" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+          <img class="container__journal--meter-false" src="companion-app/Icons/Rectangle2.png"
+                alt="comprehension meter"/>
+        </div>
+
+          
+        <h3 class="h3__journal--motto"></h3>
+        <div class="container__journal--quote">„That's life in the city"</div>
+
+        <h3 class="h3__journal--notes"></h3>
+        <div class="text__notes">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, deleniti? Quibusdam magni alias sapiente id tempore sunt, cumque nam! Numquam veritatis perspiciatis nulla. Illo totam neque dolore a ab adipisci!
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Navigation -->
     <footer>
       <nav class="navbar">
         <div class="navbar__item">
