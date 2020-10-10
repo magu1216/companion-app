@@ -1,10 +1,17 @@
 * {
     margin: 0px;
     box-sizing: border-box;
-  }
+}
 
 h1 {
-    color: red;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 16px;
+    color: #193251;
+    text-justify: center;
+    text-align: top;
+    font-family: "Open Sans", sans-serif;
+
 }
 
   body {
