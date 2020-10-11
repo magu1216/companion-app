@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  width: 335px;
+  height: 44px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(25, 50, 81, 0.5);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.energyrate_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.energyrate {
+  display: block;
+  border-radius: 5px;
+  height: 48px;
+  width: 315px;
+  margin-bottom: 10px;
+}
+
+.energyrate__100 {
+  background-color: #ff5a36;
+  color: white;
+}
+
+.energyrate__75 {
+  background-color: #ff9c86;
+  color: white;
+}
+
+.energyrate__50 {
+  background-color: #ffbdaf;
+  color: #ff5a36;
+}
+
+.energyrate__25 {
+  background-color: #ffded7;
+  color: #ff5a36;
+}
+
+/* Energy Rate Diagram */
+.diagram {
+  display: grid;
+  grid-auto-flow: column;
+  width: 315px;
+  height: 210px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  grid-template-columns: auto 17% 17% 17% 17% 17%;
+  grid-template-rows: 17% 17% 17% 17% 17% auto;
+}
+
+.border--bottom {
+  border-bottom: solid 1px lightgray;
+}
+
+.text--center--bottom {
+  justify-content: center;
+  place-self: center;
+}
+
+.r1c2-r1c6 {
+  grid-row: 1;
+  grid-column: 2 / span 5;
+}
+
+.r2c2-r2c6 {
+  grid-row: 2;
+  grid-column: 2 / span 5;
+}
+
+.r3c2-r3c6 {
+  grid-row: 3;
+  grid-column: 2 / span 5;
+}
+
+.r4c2-r4c6 {
+  grid-row: 4;
+  grid-column: 2 / span 5;
+}
+
+.r5c2-r5c6 {
+  grid-row: 5;
+  grid-column: 2 / span 5;
+}
+
+/* Diagram END */
