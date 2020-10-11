@@ -110,3 +110,27 @@ header {
 }
 
 /* Diagram END */
+.navbar {
+    display: flex;
+    width: 335px;
+    height: 44px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(25, 50, 81, 0.5);
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.navbar__item {
+    opacity: 0.4;
+}
+
+.active {
+    opacity: 1;
+}
