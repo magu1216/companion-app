@@ -1,5 +1,6 @@
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -11,7 +12,6 @@ h1 {
     text-justify: center;
     text-align: top;
     font-family: "Open Sans", sans-serif;
-
 }
 
   body {
@@ -23,23 +23,32 @@ h1 {
     font-size: 14px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
+    color: #193251;
+    /* speaks for itself */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
   }
   
+
   .container__names {
     /* this is all of the stuff WITHIN the thing with the plus */
-    border: 1px solid #e0e4e8;
+    border: 1px solid#e0e4e8;
     margin-left: 30px;
     margin-right: 30px;
     max-width: 315px;
+    max-height: 58px;
     height: 58px;
-    padding: 18px 80px 18px 79px;
+    padding-top: 18px;
+    justify-items: stretch;
+    align-items: stretch;
     text-align: center;
     position: relative;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 115px;
-    margin-bottom: 10px;
+    color: #7589a2;
+    z-index: 0;
   }
 
 .container__names--buddy-flex {
@@ -57,11 +66,11 @@ h1 {
     height: 21px;
     top: 48px;
     left: 168px;
+    z-index: 1;
 }
-    
+
 .container__names--team-flex {
-    /* margins for the names container */
-    margin-top: 30px;
+    /* margins for the teams container */
     margin-bottom: 10px;
 }
   
@@ -79,18 +88,12 @@ h1 {
     width: 315px;
 }
   
-.namebutton__last-child {
+.container__last-child {
     /* puts round corners onto the lower end */
     position: relative;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 315px;
-}
-
-.h2__journal--margin {
-    /* speaks for itself */
-    margin-top: 30px;
-    margin-bottom: 10px;
 }
 
 .container__journal {
@@ -105,6 +108,7 @@ h1 {
     flex-direction: column;
     border-radius: 6px;
     box-shadow: 0px 2px 11px #193251;
+    min-height: 347px;
 }
   
   h3 {
@@ -119,6 +123,7 @@ h1 {
     /* some padding and alignment for the  */
     align-items: top;
     padding-top: 20px;
+    color: #7589a2;
   }
 
 .container__voting  {
@@ -147,6 +152,7 @@ h1 {
   h3.h3__journal--comprehension {
     padding-top: 20px;
     align-items: top;
+    color: #7589a2;
   }
   
   .container__journal--meter {
@@ -159,7 +165,7 @@ h1 {
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0;
-    margin-right: 1px;
+    margin-right: 0;
   }
   
   .container__journal--meter-false {
@@ -169,12 +175,13 @@ h1 {
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
-    margin-right: 1px;
+    margin-right: 0px;
   }
   
   h3.h3__journal--motto {
     padding-top: 13px;
     align-items: top;
+    color: #7589a2;
   }
   
   .container__journal--quote {
@@ -184,11 +191,13 @@ h1 {
     line-height: 1.0;
     font-family: "Open Sans", sans-serif;
     align-items: top;
-  
   }
   
   h3.h3__journal--notes {
     padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: top;
+    color: #7589a2;
     }
   
   .container__journal--notepad {
@@ -198,7 +207,11 @@ h1 {
     line-height: 1.429;
     font-family: "Open Sans", sans-serif;
     align-items: top;
+    padding-bottom: 220px;
+    color: #193251;
+    }
+  
+  .container__journal--spacer {
+    padding-top: 10px;
   }
-  
-  
   
