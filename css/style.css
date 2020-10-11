@@ -1,22 +1,19 @@
 header {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding-bottom: 30%;
-  vertical-align: middle;
-  overflow: hidden;
+  height: 75px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #f8f8f8;
 }
 
-.wave {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.wave__path {
-  stroke: none;
-  fill: grey;
+.header__container {
+  text-align: center;
 }
 
 .navbar {
@@ -33,6 +30,45 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.diagram {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  color: #7589a2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diagram__legend {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diagram__legend__item {
+  border-style: solid;
+  border-width: 0;
+  border-radius: 3px;
+  margin-left: 10px;
+  padding: 2px 8px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.diagram__legend__item--students {
+  background-color: #193251;
+  color: #ffffff;
+}
+
+.diagram__legend__item--you {
+  background-color: #ffded7;
+  color: #ff5a36;
 }
 
 .energyrate {
@@ -70,7 +106,6 @@ header {
   width: 315px;
   height: 210px;
   margin-top: 0px;
-  margin-bottom: 20px;
   grid-template-columns: auto 17% 17% 17% 17% 17%;
   grid-template-rows: 17% 17% 17% 17% 17% auto;
 }
@@ -111,26 +146,26 @@ header {
 
 /* Diagram END */
 .navbar {
-    display: flex;
-    width: 335px;
-    height: 44px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(25, 50, 81, 0.5);
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    bottom: 20px;
-    left: 0px;
-    right: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
+  display: flex;
+  width: 335px;
+  height: 44px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(25, 50, 81, 0.5);
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
 }
 
 .navbar__item {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 .active {
-    opacity: 1;
+  opacity: 1;
 }

@@ -7,14 +7,15 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="./css/gadget.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Student Companion App</title>
   </head>
   <body>
     <header>
-      <svg class="wave" viewBox="0 0 500 130" preserveAspectRatio="xMinYMin meet">
-        <path class="wave__path" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
-      </svg>
+      <section class="header__container">
+        <h1>ENERGY</h1>
+      </section>
     </header>
     <main>
       <section>
@@ -37,8 +38,10 @@
           <div class="diagram__item text--center--bottom r6c5"><p>18:25</p></div>
           <div class="diagram__item text--center--bottom r6c6"><p>19:00</p></div>
         </div>
-        <span>Other Students</span>
-        <span>You</span>
+        <div class="diagram__legend">
+          <div class="diagram__legend__item diagram__legend__item--students">Other Students</div>
+          <div class="diagram__legend__item diagram__legend__item--you">You</div>
+        </div>
       </section>
       <h2>Rate your current energy level</h2>
       <div class="energyrate_wrapper">
