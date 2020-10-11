@@ -1,3 +1,24 @@
+header {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 30%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.wave {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.wave__path {
+  stroke: none;
+  fill: grey;
+}
+
 .navbar {
   display: flex;
   width: 335px;
