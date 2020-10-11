@@ -1,8 +1,19 @@
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
+h1 {
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 16px;
+    color: #193251;
+    text-justify: center;
+    text-align: top;
+    font-family: "Open Sans", sans-serif;
+}
+
   body {
     width: 375px;
   }
@@ -12,72 +23,81 @@
     font-size: 14px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
+    color: #193251;
+    /* speaks for itself */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
   }
   
-  .container__1 {
-    border: 1px solid #e0e4e8;
+
+  .container__names {
+    /* this is all of the stuff WITHIN the thing with the plus */
+    border: 1px solid#e0e4e8;
     margin-left: 30px;
     margin-right: 30px;
     max-width: 315px;
+    max-height: 58px;
     height: 58px;
-    padding: 18px 80px 18px 79px;
+    padding-top: 18px;
+    justify-items: stretch;
+    align-items: stretch;
     text-align: center;
     position: relative;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
+    color: #7589a2;
+    z-index: 0;
+  }
+
+.container__names--buddy-flex {
+    /* this is the box AROUND the plus thing */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
   
-  .container__plus {
+.container__names--plus {
+    /* this is the PLUS in the plus thing */
     position: absolute;
     width: 21px;
     height: 21px;
     top: 48px;
     left: 168px;
-  }
+    z-index: 1;
+}
+
+.container__names--team-flex {
+    /* margins for the teams container */
+    margin-bottom: 10px;
+}
   
-  .container__c1 {
-    position: relative;
+.container__names--team-flex {
+    /* the box AROUND the team thing */
     display: flex;
     flex-direction: column;
     align-items: stretch;
-  }
-  
-  .container__1 {
-    margin-top: 115px;
-    margin-bottom: 10px;
-  }
-  
-  .container__2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .yesterdays-journal {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .namebutton--flex5 {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .namebutton--first {
+}
+
+.container__first-child {
+    /* puts round corners onto the upper end */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 315px;
-  }
+}
   
-  .namebutton--last {
+.container__last-child {
+    /* puts round corners onto the lower end */
     position: relative;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 315px;
-  }
-  
-  .journal {
+}
+
+.container__journal {
+    /* the box AROUND the journal thing */
     display: flex;
     margin-left: 30px;
     margin-right: 30px;
@@ -88,95 +108,110 @@
     flex-direction: column;
     border-radius: 6px;
     box-shadow: 0px 2px 11px #193251;
-  }
+    min-height: 347px;
+}
   
-  .journal--font {
+  h3 {
+    /* font and styling for the journal thing h3 */
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.333;
   }
   
-  .journal--rating {
+  .h3__journal--rating {
+    /* some padding and alignment for the  */
     align-items: top;
     padding-top: 20px;
+    color: #7589a2;
   }
-  
-  .journal--vote {
+
+.container__voting  {
+    /* this is the box AROUND the voting stars */
     display: flex;
     flex-direction: rows;
     padding-top: 10px;
     padding-right: 70px;
-  }
+}
   
-  .journal--vote-true {
+  .container__voting--true {
+    /* the opaque stars */
     width: 25px;
     height: 24px;
     margin-right: 20px;
   }
   
-  .journal--vote-false {
+  .container__voting--false {
+    /* the semitransparent stars */
     width: 25px;
     height: 24px;
     opacity: 20%;
     margin-right: 20px;
   }
   
-  .journal--comprehension {
+  h3.h3__journal--comprehension {
     padding-top: 20px;
     align-items: top;
+    color: #7589a2;
   }
   
-  .journal--meter {
+  .container__journal--meter {
     padding-top: 10px;
   }
   
-  .journal--meter-true {
+  .container__journal--meter-true {
     height: 22px;
     width: 22px;
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0;
-    margin-right: 1px;
+    margin-right: 0;
   }
   
-  .journal--meter-false {
+  .container__journal--meter-false {
     height: 22px;
     width: 22px;
     opacity: 20%;
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
-    margin-right: 1px;
+    margin-right: 0px;
   }
   
-  .journal--motto {
+  h3.h3__journal--motto {
     padding-top: 13px;
     align-items: top;
+    color: #7589a2;
   }
   
-  .journal--quoththeraven {
+  .container__journal--quote {
     padding-top: 10px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.0;
     font-family: "Open Sans", sans-serif;
     align-items: top;
-  
   }
   
-  .journal--notes {
+  h3.h3__journal--notes {
     padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: top;
+    color: #7589a2;
     }
   
-  .journal--yakyakyak {
+  .container__journal--notepad {
     padding-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     font-family: "Open Sans", sans-serif;
     align-items: top;
+    padding-bottom: 220px;
+    color: #193251;
+    }
+  
+  .container__journal--spacer {
+    padding-top: 10px;
   }
-  
-  
   
