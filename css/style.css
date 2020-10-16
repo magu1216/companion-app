@@ -165,3 +165,17 @@ header {
 .active {
   opacity: 1;
 }
+
+.container__names--buddiespage {
+  margin-bottom: 20px;
+}
+
+.text__notes {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container__journal--journalsite {
+  margin-bottom: 20px;
+}
