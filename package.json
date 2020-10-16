@@ -28,5 +28,7 @@
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "core-js": "^3.6.5"
+  }
 }
