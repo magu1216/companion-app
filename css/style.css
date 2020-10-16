@@ -32,15 +32,6 @@ header {
   align-items: center;
 }
 
-.diagram {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 12px;
-  color: #7589a2;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .diagram__legend {
   display: flex;
   flex-wrap: nowrap;
@@ -101,6 +92,12 @@ header {
 
 /* Energy Rate Diagram */
 .diagram {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  color: #7589a2;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-auto-flow: column;
   width: 315px;
@@ -116,7 +113,6 @@ header {
 
 .text--center--bottom {
   justify-content: center;
-  place-self: center;
 }
 
 .r1c2-r1c6 {
