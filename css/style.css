@@ -158,7 +158,27 @@ header {
   background-color: white;
 }
 
-.navbar__item {
+/* .navbar__item {
+  opacity: 0.4;
+} */
+
+.homebutton {
+  opacity: 0.4;
+}
+
+.buddiesbutton {
+  opacity: 0.4;
+}
+
+.teamsbutton {
+  opacity: 0.4;
+}
+
+.energybutton {
+  opacity: 0.4;
+}
+
+.journalbutton {
   opacity: 0.4;
 }
 
@@ -179,5 +199,25 @@ header {
 .container__journal--journalsite {
   margin-bottom: 20px;
 }
+
+.index,
+.buddies,
+.teams,
+.energy,
+.journal {
+ opacity: 1;
+ transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+
+
+
+
 
 /*sjdinckdjc*/
