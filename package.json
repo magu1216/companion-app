@@ -1,0 +1,32 @@
+{
+  "name": "companion-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magu1216/companion-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magu1216/companion-app/issues"
+  },
+  "homepage": "https://github.com/magu1216/companion-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.1",
+    "@storybook/addon-actions": "^6.0.26",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/html": "^6.0.26",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1"
+  },
+  "dependencies": {}
+}
