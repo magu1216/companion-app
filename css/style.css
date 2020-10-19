@@ -215,7 +215,14 @@ header {
   opacity: 0;
 }
 
-
+.h3__journalsite {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.286;
+  padding-top: 20px;
+  align-items: top;
+}
 
 
 
