@@ -1,19 +1,20 @@
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 75px;
   margin: 0;
   padding: 0;
   position: fixed;
   top: 0;
-  z-index: 10;
-  background-color: #f8f8f8;
 }
 
-.header__container {
-  text-align: center;
+.header__content {
+  position: relative;
+}
+
+.header__svg {
+  position: absolute;
+  top: 10px;
+  width: 100%;
 }
 
 .navbar {
@@ -23,12 +24,6 @@ header {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(25, 50, 81, 0.5);
   justify-content: space-evenly;
-  align-items: center;
-}
-
-.energyrate_wrapper {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -60,6 +55,12 @@ header {
 .diagram__legend__item--you {
   background-color: #ffded7;
   color: #ff5a36;
+}
+
+.energyrate__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .energyrate {
@@ -205,8 +206,8 @@ header {
 .teams,
 .energy,
 .journal {
- opacity: 1;
- transition: opacity 1s ease-in-out;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 .hidden {
@@ -214,10 +215,3 @@ header {
   overflow: hidden;
   opacity: 0;
 }
-
-
-
-
-
-
-/*sjdinckdjc*/
