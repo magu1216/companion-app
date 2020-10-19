@@ -27,6 +27,11 @@ writeDayNameAndDateToDocument.innerText = `on ${dayNames[date.getDay()]} - ${dat
 // writeTodayDateToDocument.innerText = `Today, ${dateToday}`;
 // 
 
+// this puts an alert on the "rate today"-button
+const rateTodayButton = document.querySelector('#rate-today');
+rateTodayButton.addEventListener('click', () => {
+    alert('Here comes the hot stepper!');
+});
 
 
 buttonHome.addEventListener("click", () => {
