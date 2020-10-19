@@ -112,7 +112,8 @@ body {
   align-items: flex-start;
   flex-direction: column;
   border-radius: 6px;
-  box-shadow: 0px 2px 11px #193251;
+  box-shadow: 0px 0px 10px rgba(25, 50, 81, 0.5);
+  /* box-shadow: 0px 2px 11px #193251; alter wert */
   min-height: 347px;
 }
 
