@@ -9,6 +9,26 @@ const teamsPage = document.querySelector(".teams")
 const energyPage = document.querySelector(".energy")
 const journalPage = document.querySelector(".journal")
 
+// this part does the date functionality
+const date = new Date();
+const dayName = date.getDay();
+const dd = date.getDate();
+const mm = date.getMonth() + 1;
+const yyyy = date.getFullYear();
+
+const dayNames = {0: "Sunday", 1: "Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thursday", 5: "Friday", 6: "Saturday"};
+
+const dateToday = `${dd}.${mm}.${yyyy}`;
+
+const writeDayNameAndDateToDocument = document.getElementById('date__dayname-date');
+const writeDateToDocument = document.getElementById('date__date');
+const writeTodayDateToDocument = document.getElementById('date__today-date');
+writeDayNameAndDateToDocument.innerText = `on ${dayNames[date.getDay()]} - ${dateToday}`;
+writeDateToDocument.innerText = dateToday;
+writeTodayDateToDocument.innerText = `Today, ${dateToday}`;
+//
+
+
 buttonHome.addEventListener("click", () => {
     indexPage.classList.remove("hidden")
     buddiesPage.classList.add("hidden")
@@ -83,3 +103,5 @@ buttonJournal.addEventListener("click", () => {
     buttonJournal.classList.add("active")
     
 })
+
+
