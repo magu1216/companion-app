@@ -48,6 +48,7 @@ body {
 .container__names {
   /* this is all of the stuff WITHIN the thing with the plus */
   border: 1px solid#e0e4e8;
+  border-bottom: none;
   margin-left: 30px;
   margin-right: 30px;
   max-width: 315px;
@@ -63,6 +64,7 @@ body {
   font-weight: 600;
   color: #7589a2;
   z-index: 0;
+  border-collapse: collapse;
 }
 
 .container__names--buddy-flex {
@@ -105,6 +107,7 @@ body {
 .container__last-child {
   /* puts round corners onto the lower end */
   position: relative;
+  border-bottom: 1px solid#e0e4e8;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   width: 315px;
