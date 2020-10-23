@@ -17,8 +17,7 @@ const mm = date.getMonth() + 1;
 const yyyy = date.getFullYear();
 const dayNames = {0: "Sunday", 1: "Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thursday", 5: "Friday", 6: "Saturday"};
 const dateToday = `${dd}.${mm}.${yyyy}`;
-const writeDayNameAndDateToDocument = document.getElementB
-yId('date__dayname-date');
+const writeDayNameAndDateToDocument = document.getElementById('date__dayname-date');
 // const writeDateToDocument = document.getElementById('date__date');
 const writeTodayDateToDocument = document.getElementById('date__today-date');
 
