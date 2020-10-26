@@ -12,25 +12,48 @@ fetch('https://muc-2020-w1-student-api.vercel.app/api/buddies') // continues in 
 
 
 function buddiesFunc (buddiesList) {
-    const name1 = document.querySelector('#buddy1');
-    name1.innerText = buddiesList[0][0];        
-    const name2 = document.querySelector('#buddy2');
-    name2.innerText = buddiesList[0][1];
+    // const name1 = document.querySelector('#buddy1');
+    // name1.innerText = buddiesList[0][0];        
+    // const name2 = document.querySelector('#buddy2');
+    // name2.innerText = buddiesList[0][1];
 
-    const name3 = document.querySelector('#buddy3');
-    name3.innerText = buddiesList[1][0];
-    const name4 = document.querySelector('#buddy4');
-    name4.innerText = buddiesList[1][1];
+    // const name3 = document.querySelector('#buddy3');
+    // name3.innerText = buddiesList[1][0];
+    // const name4 = document.querySelector('#buddy4');
+    // name4.innerText = buddiesList[1][1];
 
-    const name5 = document.querySelector('#buddy5');
-    name5.innerText = buddiesList[2][0];        
-    const name6 = document.querySelector('#buddy6');
-    name6.innerText = buddiesList[2][1];
+    // const name5 = document.querySelector('#buddy5');
+    // name5.innerText = buddiesList[2][0];        
+    // const name6 = document.querySelector('#buddy6');
+    // name6.innerText = buddiesList[2][1];
 
-    const name7 = document.querySelector('#buddy7');
-    name7.innerText = buddiesList[3][0];
-    const name8 = document.querySelector('#buddy8');
-    name8.innerText = buddiesList[3][1];
+    // const name7 = document.querySelector('#buddy7');
+    // name7.innerText = buddiesList[3][0];
+    // const name8 = document.querySelector('#buddy8');
+    // name8.innerText = buddiesList[3][1];
+    const buddiesMain = document.querySelector('section.buddies main')
+    buddiesList.forEach((buddies) => {
+        let containerBuddies = document.createElement("div")
+        containerBuddies.classList.add("container__names--buddy-flex","container__names--buddiespage")
+        buddiesMain.appendChild(containerBuddies)
+        for (let i = 0; i < buddies.length; i++) {
+            let buddiesMember = document.createElement('div');
+            buddiesMember.classList.add('container__names')
+            buddiesMember.innerText = buddies[i];
+
+            if (i === 0) {
+                buddiesMember.classList.add('container__first-child');
+                let plusImage = document.createElement('img');
+                plusImage.setAttribute("src", "./src/Icons/Plus.png");
+                containerBuddies.appendChild(plusImage);
+                plusImage.classList.add("container__names--plus");
+                
+            } else if (i === 1) {
+                buddiesMember.classList.add('container__last-child');
+            };
+            containerBuddies.appendChild(buddiesMember);
+        };
+    });
 }
 
 fetch('https://muc-2020-w1-student-api.vercel.app/api/teams') // continues in next line with .then
